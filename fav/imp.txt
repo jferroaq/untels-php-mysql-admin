@@ -1,1 +1,11 @@
-
+USE restaurante;
+CREATE TABLE sala (
+    dni VARCHAR(10) NOT NULL,
+    ap_pat VARCHAR(50) NOT NULL,
+    ap_mat VARCHAR(50),
+    nom VARCHAR(100) NOT NULL,
+    nick VARCHAR(50) NOT NULL,
+    pass VARCHAR(255) NOT NULL,
+    nu_tel VARCHAR(20),
+    PRIMARY KEY (dni)
+);

@@ -41,7 +41,14 @@
     <input type="text" name="dbnm" placeholder="Database">
     <input type="submit" value="Crear!">
   </form>
-<h4>6. Crear nuevo usuario de Mysql</h4>
+<h4>6. Eliminar Base de Datos en Root</h4>
+  <form action="dbEliminar.php" method="post">
+    <input type="text" name="user" placeholder="Usuario">
+    <input type="password" name="pass" placeholder="Clave">
+    <input type="text" name="dbnm" placeholder="Database">
+    <input type="submit" value="Eliminar!">
+  </form>
+<h4>7. Crear nuevo usuario de Mysql</h4>
   <form action="crear.php" method="post">
     <input type="text" name="user" placeholder="Usuario">
     <input type="password" name="pass" placeholder="Clave"><br><br>
@@ -49,7 +56,7 @@
     <input type="password" name="newp" placeholder="Nueva Clave">
     <input type="submit" value="Crear!">
   </form>
-<h4>7. Asignar Base de Datos a nuevo usuario de Mysql</h4>
+<h4>8. Asignar Base de Datos a nuevo usuario de Mysql</h4>
   <form action="asignar.php" method="post">
     <input type="text" name="user" placeholder="Usuario">
     <input type="password" name="pass" placeholder="Clave"><br>
@@ -57,18 +64,18 @@
     <input type="text" name="newu" placeholder="Nuevo Usuario">
     <input type="submit" value="Asignar!">
   </form>
-<h4>8. Eliminar usuario de Mysql</h4>
+<h4>9. Eliminar usuario de Mysql</h4>
   <form action="eliminar.php" method="post">
     <input type="text" name="user" placeholder="Usuario">
     <input type="password" name="pass" placeholder="Clave"><br><br>
     <input type="text" name="newu" placeholder="Cual Usuario">
     <input type="submit" value="Eliminar!">
   </form>
-<h4>9. Ejecutar script de Mysql</h4>
-  <form action="ejecutar.php" method="post">
+<h4>0. Ejecutar script de Mysql</h4>
+  <form action="ejecutar.php" method="post" enctype="multipart/form-data">
     <input type="text" name="user" placeholder="Usuario">
-    <input type="password" name="pass" placeholder="Clave"><br><br>
-    <input type="text" name="link" placeholder="/ir/a/script.sql">
+    <input type="password" name="pass" placeholder="Clave"><br>
+    Selecciona un script: <input type="file" name="link"><br><br>
     <input type="submit" value="Ejecutar!">
   </form>
 </body>

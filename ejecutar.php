@@ -105,7 +105,7 @@ if ( $path === "" ) {
         //echo "Hay punto y coma...<br>";
         echo $sql . "<br>";
         // Ejecutar la consulta y almacenar el resultado
-        //$result = $conn->query($sql);
+        $result = $conn->query($sql);
         // sqlrun($result);
         $sql = "";
         $sihay = FALSE;
